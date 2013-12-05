@@ -2,18 +2,13 @@
 # This class installs the required packages for jetty
 #
 # === Actions
-# - Installs default jdk
 # - Installs jetty and extra libs
 #
 class solr::install {
 
-  package { 'default-jdk':
-    ensure  => present,
-  }
-
   package { 'jetty':
     ensure  => present,
-    require => Package['default-jdk'],
+    require => Package['oracle-java7-installer'],
   }
 
   package { 'libjetty-extra':
