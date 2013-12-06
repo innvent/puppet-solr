@@ -16,12 +16,8 @@ class solr::install {
     require => Package['jetty'],
   }
 
-  package { 'wget':
-    ensure  => present,
-  }
+  realize Package['curl']
+  realize Package['wget']
 
-  package { 'curl':
-    ensure  => present,
-  }
 }
 
