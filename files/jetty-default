@@ -3,7 +3,7 @@
 # change to 0 to allow Jetty to start
 NO_START=0
 
-# change to 'no' or uncomment to use the default setting in /etc/default/rcS 
+# change to 'no' or uncomment to use the default setting in /etc/default/rcS
 VERBOSE=yes
 
 # Run Jetty as this user ID (default: jetty)
@@ -21,10 +21,10 @@ JETTY_PORT=8080
 # Timeout in seconds for the shutdown of all webapps
 #JETTY_SHUTDOWN=30
 
-# Additional arguments to pass to Jetty    
+# Additional arguments to pass to Jetty
 #JETTY_ARGS=
 
-# Extra options to pass to the JVM         
+# Extra options to pass to the JVM
 JAVA_OPTIONS="-Dsolr.solr.home=/usr/share/solr $JAVA_OPTIONS"
 
 # Home of Java installation.
@@ -32,7 +32,7 @@ JAVA_OPTIONS="-Dsolr.solr.home=/usr/share/solr $JAVA_OPTIONS"
 
 # The first existing directory is used for JAVA_HOME (if JAVA_HOME is not
 # defined in /etc/default/jetty). Should contain a list of space separated directories.
-JDK_DIRS="/usr/lib/jvm/default-java /usr/lib/jvm/java-6-sun"
+JDK_DIRS="/usr/lib/jvm/java-7-oracle /usr/lib/jvm/default-java /usr/lib/jvm/java-6-sun"
 
 # Java compiler to use for translating JavaServer Pages (JSPs). You can use all
 # compilers that are accepted by Ant's build.compiler property.
